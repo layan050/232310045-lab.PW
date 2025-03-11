@@ -1,0 +1,34 @@
+aside h5{
+    color: bisque;
+}
+footer{
+    background-color: gray;
+    text-align: center;
+}
+footer:hover{
+    background-color: lightgray;
+    color: black;
+}
+div p{
+    background-color: lightcoral;
+    text-align: center;
+}
+#card{
+    border: 2px dotted gray;
+    margin: 50px;
+    padding: 25px 50px  75px 100px;
+}
+.Paragraph2:hover{
+    font-size: 1.5em;
+    color: red;
+}
+p::first-line{
+    color: rgb(2, 32, 32);
+
+}
+body{
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+}
