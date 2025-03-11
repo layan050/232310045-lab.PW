@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7 - Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    <form action="submit_form.php" method="post">
+        <label for="npm">NPM:</label>
+        <input type="text" id="npm" name="npm" required><br><br>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="birthplace">Place of Birth:</label>
+        <input type="text" id="birthplace" name="birthplace" required><br><br>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+
+        <button type="submit">Save</button>
+        <button type="reset">Clear</button>
+    </form>
+
+</body>
+</html>
