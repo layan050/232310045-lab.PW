@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Travel Ticket Booking</h2>
+
+    <form id="ticketForm">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Destination:</label>
+        <select id="destination">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Solo">Solo</option>
+            <option value="Surabaya">Surabaya</option>
+        </select>
+
+        <label>Class:</label>
+        <select id="class">
+            <option value="Executive">Executive</option>
+            <option value="Business">Business</option>
+            <option value="Economy">Economy</option>
+        </select>
+
+        <label>Number of Tickets:</label>
+        <input type="number" id="ticketCount" min="1" required>
+
+        <label>Are you a member?</label>
+        <select id="member">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <button type="button" onclick="calculatePrice()">Calculate</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="TicketBooking.js"></script>
+</body>
+</html>

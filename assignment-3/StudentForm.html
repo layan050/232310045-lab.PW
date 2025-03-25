@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Student Information Form</h2>
+
+    <form id="studentForm">
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label for="religion">Religion:</label>
+        <select id="religion">
+            <option value="Islam">Islam</option>
+            <option value="Christian">Christian</option>
+            <option value="Catholic">Catholic</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddhist">Buddhist</option>
+        </select>
+
+        <label for="status">Status:</label>
+        <input type="text" id="status" required>
+
+        <label for="major">Major:</label>
+        <select id="major">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Tourism">Tourism</option>
+            <option value="Industrial Engineering">Industrial Engineering</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments"></textarea>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <h3>Submitted Data:</h3>
+    <div id="output"></div>
+
+    <script src="StudentForm.Js"></script>
+</body>
+</html>
