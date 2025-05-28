@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.exercises-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Time Greeting Styles */
+.time-display {
+    font-size: 2rem;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.greeting-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #2563eb;
+}
+
+.alert-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.alert-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Quadratic Solver Styles */
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.calculate-btn {
+    width: 100%;
+    padding: 12px;
+    background: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+.calculate-btn:hover {
+    background: #15803d;
+}
+
+.error {
+    background: #fef2f2;
+    border: 2px solid #fecaca;
+    color: #dc2626;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.results {
+    background: #f0fdf4;
+    border: 2px solid #bbf7d0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.results h3 {
+    color: #166534;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.results p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.formula-info {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.formula-info p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .exercises-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}

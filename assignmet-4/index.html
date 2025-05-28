@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises - Time Greeting & Quadratic Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Exercises</h1>
+        
+        <div class="exercises-grid">
+            <!-- Exercise 1: Time-Based Greeting -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        Time-Based Greeting
+                    </h2>
+                </div>
+                <div class="card-content">
+                    <div id="timeDisplay" class="time-display"></div>
+                    <div id="greetingDisplay" class="greeting-display"></div>
+                    <button class="alert-btn" onclick="showGreetingAlert()">Show Alert</button>
+                </div>
+            </div>
+
+            <!-- Exercise 2: Quadratic Equation Solver -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        Quadratic Equation Solver
+                    </h2>
+                    <p class="subtitle">Find roots of F(x) = ax² + bx + c</p>
+                </div>
+                <div class="card-content">
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label for="coeffA">Coefficient a</label>
+                            <input type="number" id="coeffA" step="any" placeholder="Enter a">
+                        </div>
+                        <div class="input-group">
+                            <label for="coeffB">Coefficient b</label>
+                            <input type="number" id="coeffB" step="any" placeholder="Enter b">
+                        </div>
+                        <div class="input-group">
+                            <label for="coeffC">Coefficient c</label>
+                            <input type="number" id="coeffC" step="any" placeholder="Enter c">
+                        </div>
+                    </div>
+                    
+                    <button class="calculate-btn" onclick="calculateRoots()">Calculate Roots</button>
+                    
+                    <div id="errorDisplay"></div>
+                    <div id="resultsDisplay"></div>
+                    
+                    <div class="formula-info">
+                        <p><strong>Formula:</strong> x = (-b ± √(b² - 4ac)) / 2a</p>
+                        <p><strong>Discriminant:</strong> Δ = b² - 4ac</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
